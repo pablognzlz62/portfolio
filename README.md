@@ -15,6 +15,7 @@ Me considero responsable, perseverante y siempre dispuesto a asumir nuevos desaf
 - CSS
 - TypeScript
 - Git & GitHub
+- SQL
 
 ## Proyectos
 
