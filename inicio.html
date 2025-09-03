@@ -1,78 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Pablo Napoleón González - Programador FullStack Jr.</h1>
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="#sobre">Sobre mi</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Pablo Napoleón González - Programador FullStack Jr. especializado en HTML, CSS, TypeScript y desarrollo web">
+  <title>Pablo Napoleón González - Portfolio FullStack</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <h1 class="main-title">Pablo Napoleón González</h1>
+      <p class="main-subtitle">Programador FullStack Jr.</p>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre mí</a></li>
+        <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+          <p class="about-text">
+            Soy Pablo, estudiante de Ingeniería en Sistemas y programador FullStack
+            Jr. Me apasiona aprender y mejorar día a día en tecnologías como HTML,
+            CSS y TypeScript. Me considero responsable, perseverante y siempre
+            dispuesto a asumir nuevos desafíos para crecer en el mundo del
+            desarrollo.
+          </p>
+          <div class="skills-section">
+            <h3 class="skills-title">Tecnologías</h3>
+            <ul class="skills-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">TypeScript</li>
+              <li class="skill-item">Git</li>
+              <li class="skill-item">SQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-description">Estos son algunos de mis proyectos donde he trabajado</p>
+        <div class="projects-grid">
+          <article class="project-card" id="veterinaria">
+            <h3 class="project-title">Sistema Veterinario</h3>
+            <p class="project-description">Aplicación web para gestionar clientes, mascotas y turnos de una clínica veterinaria.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </article>
+          <article class="project-card" id="tienda">
+            <h3 class="project-title">Tienda Online</h3>
+            <p class="project-description">Aplicación web completa para gestionar productos, inventario y pedidos de una tienda.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </article>
+          <article class="project-card" id="generador">
+            <h3 class="project-title">Generador de Contraseñas</h3>
+            <p class="project-description">Herramienta segura que crea contraseñas aleatorias con diferentes niveles de complejidad.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-content">
+          <p class="contact-description">¿Interesado en trabajar juntos? ¡No dudes en contactarme!</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-label">Correo:</span>
+              <span class="contact-value">napogonzalez2@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Teléfono:</span>
+              <span class="contact-value">3813637595</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              LinkedIn
+            </a>
+            <a href="https://github.com/pablognzlz62" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p class="copyright">&copy; 2025 Pablo Napoleón González. Todos los derechos reservados.</p>
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <ul class="footer-nav-list">
+          <li><a href="#" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/pablognzlz62" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </nav>
-    </header>
-    <section id="sobre">
-      <h2>Sobre mi</h2>
-      <p>
-        Soy Pablo, estudiante de Ingeniería en Sistemas y programador FullStack
-        Jr. Me apasiona aprender y mejorar día a día en tecnologías como HTML,
-        CSS y TypeScript. Me considero responsable, perseverante y siempre
-        dispuesto a asumir nuevos desafíos para crecer en el mundo del
-        desarrollo.
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>TypeScript</li>
-        <li>Git</li>
-        <li>SQL</li>
-      </ul>
-    </section>
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <p>Estos son algunos de mis proyectos donde he trabajado</p>
-      <article id="veterinaria">
-        <h3>Veterinaria</h3>
-        <p>Aplicación web para gestionar clientes, mascotas y turnos.</p>
-        <p>Tecnologías: HTML, CSS, TypeScript, SQL</p>
-        <a href="#" target="_blank">Ver proyecto</a>
-      </article>
-      <article id="tienda">
-        <h3>Tienda Online</h3>
-        <p>Aplicación web para gestionar productos y pedidos.</p>
-        <p>Tecnologías: HTML, CSS, TypeScript, SQL</p>
-        <a href="#" target="_blank">Ver proyecto</a>
-      </article>
-      <article id="generor">
-        <h3>Generador de contraseñas</h3>
-        <p>Herramienta que crea contraseñas seguras y aleatorias.</p>
-        <p>Tecnologías: HTML, CSS, TypeScript, SQL</p>
-        <a href="#" target="_blank">Ver proyecto</a>
-      </article>
-    </section>
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <ul>
-        <li>Correo</li>
-        <li>Telefono</li>
-        <li><a href="#" target="_blank">Linkedin</a></li>
-        <li><a href="#" target="_blank">GitHub</a></li>
-      </ul>
-    </section>
-    <footer>
-      <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
-      <nav>
-        <ul>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">GitHub</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
