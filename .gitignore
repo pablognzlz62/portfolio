@@ -1,0 +1,8 @@
+# Ignorar configuraciones locales de VS Code
+.vscode/
+
+# Ignorar dependencias de Node (si algún día usás npm)
+node_modules/
+
+# Ignorar logs
+*.log
